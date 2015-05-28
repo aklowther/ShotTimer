@@ -33,8 +33,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func startStopButtonPressed(sender: AnyObject) {
-        self.startStopButton.setTitle("Make Ready", forState: UIControlState.Normal)
-        self.startStopButton.backgroundColor = UIColor.purpleColor()
+        self.startStopButton.setTitle("Standby", forState: UIControlState.Normal)
+        self.startStopButton.backgroundColor = UIColor.blueColor()
         self.startStopButton.userInteractionEnabled = false
         self.randomTimerFireBuzzer()
         
@@ -48,9 +48,9 @@ class ViewController: UIViewController {
         let delay = Double(mini + arc4random_uniform(maxi - mini))
         
         var timer = NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: Selector("soundBuzzer"), userInfo: nil, repeats: false)
-        var coinSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Glass", ofType: "aiff")!)
+        var buzzerSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Glass", ofType: "aiff")!)
 //        var audioPlayer = AVAudioPlayer()
-        audioPlayer = AVAudioPlayer(contentsOfURL: coinSound, error: nil)
+        audioPlayer = AVAudioPlayer(contentsOfURL: buzzerSound, error: nil)
         audioPlayer.prepareToPlay()
     }
     
