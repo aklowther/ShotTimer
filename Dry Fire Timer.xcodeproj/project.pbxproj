@@ -13,6 +13,7 @@
 		DD9ADDC91B17AE5200037CA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9ADDC81B17AE5200037CA3 /* Images.xcassets */; };
 		DD9ADDCC1B17AE5200037CA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9ADDCA1B17AE5200037CA3 /* LaunchScreen.xib */; };
 		DD9ADDD81B17AE5200037CA3 /* Dry_Fire_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9ADDD71B17AE5200037CA3 /* Dry_Fire_TimerTests.swift */; };
+		DD9ADDE21B17B90900037CA3 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = DD9ADDE11B17B90900037CA3 /* Glass.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DD9ADDD11B17AE5200037CA3 /* Dry Fire TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dry Fire TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9ADDD61B17AE5200037CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9ADDD71B17AE5200037CA3 /* Dry_Fire_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dry_Fire_TimerTests.swift; sourceTree = "<group>"; };
+		DD9ADDE11B17B90900037CA3 /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		DD9ADDBF1B17AE5200037CA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD9ADDE11B17B90900037CA3 /* Glass.aiff */,
 				DD9ADDC01B17AE5200037CA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					DD9ADDBB1B17AE5200037CA3 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = E5ANWKSXGH;
 					};
 					DD9ADDD01B17AE5200037CA3 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -192,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9ADDE21B17B90900037CA3 /* Glass.aiff in Resources */,
 				DD9ADDC71B17AE5200037CA3 /* Main.storyboard in Resources */,
 				DD9ADDCC1B17AE5200037CA3 /* LaunchScreen.xib in Resources */,
 				DD9ADDC91B17AE5200037CA3 /* Images.xcassets in Resources */,
@@ -342,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dry Fire Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dry Fire Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
